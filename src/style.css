@@ -27,10 +27,10 @@ h1 {
 }
 
 li {
-list-style-type: none;
-white-space: nowrap;
-display: flex;
-margin: 5px;
+  list-style-type: none;
+  white-space: nowrap;
+  display: flex;
+  margin: 5px;
 }
 
 #scores,
@@ -45,6 +45,6 @@ margin: 5px;
 }
 
 #submit {
-width: 90px;
-align-self: end;
+  width: 90px;
+  align-self: end;
 }
