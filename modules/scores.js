@@ -33,12 +33,13 @@ export default class score {
     }else {
       display.firstdisplay(parseInt(score), name)
     }
-    // this.storage();
+    this.storage();
   }
 
   static refresh(){
     scores = [];
-    // this.storage;
+    this.storage;
+    display.remove();
   }
 
   static storage(){

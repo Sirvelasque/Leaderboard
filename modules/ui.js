@@ -28,4 +28,11 @@ export default class Ui {
     });
     return find;
   }
+
+  static remove(){
+    const items = document.querySelectorAll('li');
+    items.forEach((item) =>{
+      item.remove;
+    });
+  }
 }

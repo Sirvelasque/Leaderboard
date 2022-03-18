@@ -1,4 +1,4 @@
-import _ from 'lodash';
+import _, { attempt } from 'lodash';
 import './style.css';
 import scores from '../modules/scores.js'
 
@@ -10,8 +10,10 @@ const name = document.getElementById('name');
 input.addEventListener('click', (e) =>{
   e.preventDefault();
   scores.addScore(score.value, name.value);
+  score.value='';
+  name.value='';
 });
 
 input.addEventListener('click', (e) => {
-
+  scores.refresh();
 });
