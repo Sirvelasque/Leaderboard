@@ -1,3 +1,20 @@
 body {
-  background-color: bisque;
+  margin: 0;
+}
+
+h1 {
+  margin-left: 10px;
+}
+
+#Leaderboard {
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  justify-content: space-around;
+}
+
+#addForm {
+  display: flex;
+  flex-wrap: wrap;
 }
