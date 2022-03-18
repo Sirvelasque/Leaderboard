@@ -21,7 +21,7 @@ export default class Ui {
     items.forEach((item) => {
       const actual = parseInt(item.textContent, 10);
 
-      if (lower === actual){
+      if (lower === actual) {
         find = item.parentElement;
       }
     });
