@@ -1,6 +1,5 @@
-import _, { attempt } from 'lodash';
 import './style.css';
-import scores from '../modules/scores.js'
+import scores from '../modules/scores.js';
 
 const refresh = document.querySelector('#refresh-btn');
 const input = document.querySelector('#submit');
@@ -9,13 +8,13 @@ const name = document.getElementById('name');
 
 scores.loadDataFromStorage();
 
-input.addEventListener('click', (e) =>{
+input.addEventListener('click', (e) => {
   e.preventDefault();
   scores.addScore(score.value, name.value);
-  score.value='';
-  name.value='';
+  score.value = '';
+  name.value = '';
 });
 
-refresh.addEventListener('click', (e) => {
+refresh.addEventListener('click', () => {
   scores.refresh();
 });
