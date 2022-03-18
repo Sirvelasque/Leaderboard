@@ -14,7 +14,8 @@ export default class score {
     const play = new Player(score, name);
 
     this.scores.forEach((actual) => {
-      if(parseInt(score, 10) > parseInt(actual.score, 10) && parseInt(lower, 10) <= parseInt(actual.score, 10)) {
+      if (parseInt(score, 10) > parseInt(actual.score, 10) &&
+       parseInt(lower, 10) <= parseInt(actual.score, 10)) {
         lower = actual.score;
       }
     });
@@ -36,7 +37,7 @@ export default class score {
 
     if (parseInt(score, 10) > parseInt(this.high, 10)) {
       this.scores.splice(indexh + 1, 0, play);
-      this.high = parseInt(score);
+      this.high = parseInt(score, 10);
     } else {
       this.scores.splice(indexl + 1, 0, play);
     }
