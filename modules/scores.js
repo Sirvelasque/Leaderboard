@@ -36,8 +36,7 @@ export default class score {
         break;
     }
   }
-  console.log(indexl);
-  console.log(indexh);
+
     if (parseInt(score) > parseInt(this.high)){
       this.scores.splice(indexh+1,0,play);
       this.high = parseInt(score);
@@ -54,8 +53,9 @@ export default class score {
   }
 
   static refresh(){
+    this.scores.length = 0;
     this.scores = [];
-    this.storage;
+    this.storage();
     display.remove();
   }
 

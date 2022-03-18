@@ -7,14 +7,44 @@ h1 {
 }
 
 #Leaderboard {
-  width: 60%;
+  width: 1024px;
+  min-width: 700px;
   display: flex;
   flex-wrap: wrap;
   padding: 10px;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 #addForm {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 30px;
+}
+
+#app {
+  border: 1px solid #003737;
+  padding-left: 0;
+}
+
+li {
+list-style-type: none;
+white-space: nowrap;
+display: flex;
+margin: 5px;
+}
+
+#scores,
+#adding {
+  min-width: 350px;
+  max-width: 450px;
+}
+
+.scored {
+  margin-left: 4px;
+  font-weight: bold;
+}
+
+#submit {
+width: 90px;
+align-self: end;
 }
