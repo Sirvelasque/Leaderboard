@@ -2,14 +2,14 @@ export default class Ui {
   static display(score, name, lower){
     const container = document.getElementById('app')
     const row = document.createElement('li');
+    row.classList.add('item');
     const lowerrow = this.locateLower(lower);
-    console.log(lowerrow);
     row.innerHTML = `${name}: <div class='scored'>${score}</div>`;
     container.insertBefore(row, lowerrow);
   }
   
   static firstdisplay(score, name){
-    const container = document.getElementById('app')
+    const container = document.getElementById('app');
     const row = document.createElement('li');
     row.innerHTML = `${name}: <div class='scored'>${score}</div>`;
     container.appendChild(row);
@@ -30,9 +30,10 @@ export default class Ui {
   }
 
   static remove(){
-    const items = document.querySelectorAll('li');
+    const container = document.getElementById('app')
+    const items = document.querySelectorAll('.item');
     items.forEach((item) =>{
-      item.remove;
+      container.remove(item);
     });
   }
 }

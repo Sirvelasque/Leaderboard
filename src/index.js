@@ -7,6 +7,8 @@ const input = document.querySelector('#submit');
 const score = document.getElementById('score');
 const name = document.getElementById('name');
 
+scores.loadDataFromStorage();
+
 input.addEventListener('click', (e) =>{
   e.preventDefault();
   scores.addScore(score.value, name.value);
@@ -14,6 +16,6 @@ input.addEventListener('click', (e) =>{
   name.value='';
 });
 
-input.addEventListener('click', (e) => {
+refresh.addEventListener('click', (e) => {
   scores.refresh();
 });
