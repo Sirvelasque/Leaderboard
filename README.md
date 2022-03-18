@@ -20,8 +20,8 @@
 - Run npm install in the terminal to install node modules
 - Execute npm run dev in terminal to build the development files
 - To start a server run npm start and the server would be started
-- To Add the new task just enter the task description in the input field and press enter.
-- To Edit the task double click on the task you want to edit and it would become editable, click it one more time or press enter once the edition is done.
+- To Add the new score just enter a name and score in the input fields and press enter or click on submit.
+- To delete the scores press on refresh button
 
 ## Authors
 
