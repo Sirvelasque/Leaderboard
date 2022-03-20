@@ -1,9 +1,15 @@
 body {
   margin: 0;
+  background-color: #152733;
+  color: #b5cfe1;
 }
 
 h1 {
   margin-left: 10px;
+  color: #fff;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 5px;
 }
 
 #Leaderboard {
@@ -22,14 +28,14 @@ h1 {
 }
 
 #app {
-  border: 1px solid #003737;
+  border: 3px solid #3e9797;
   padding-left: 0;
 }
 
 li {
+  display: flex;
   list-style-type: none;
   white-space: nowrap;
-  display: flex;
   margin: 5px;
 }
 
@@ -39,12 +45,63 @@ li {
   max-width: 450px;
 }
 
-.scored {
-  margin-left: 4px;
-  font-weight: bold;
+#refresh-btn {
+  min-height: 19px;
+  max-height: 30px;
+  padding: 5px;
+  margin: 8px 8px 0 8px;
+  align-self: center;
 }
 
 #submit {
+  min-height: 0;
   width: 90px;
   align-self: end;
+  border: none;
+  color: #272a31;
+  padding: 5px;
+}
+
+button {
+  background-color: darkturquoise;
+  font-family: sans-serif;
+}
+
+input {
+  border: 3px solid #fff;
+  padding: 15px;
+  display: inline-block;
+  width: 100%;
+  min-width: 540px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+#refresh {
+  display: flex;
+  gap: 5px;
+}
+
+.gold {
+  background-color: #ecf021;
+  color: black;
+}
+
+.silver {
+  background-color: #bdbdbd;
+  color: #152733;
+}
+
+.bronce {
+  background-color: #bd7b17;
+}
+
+.scored {
+  margin-left: 8px;
+  font-weight: bold;
+  justify-self: end;
+  align-self: flex-end;
+  width: 30%;
+  color: #d82727;
 }

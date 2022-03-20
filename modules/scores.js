@@ -29,8 +29,10 @@ export default class App {
   }
 
   init() {
+    let shots = 1;
     this.scores.forEach((e) => {
-      display.display(e.score, e.user);
+      display.display(e.score, e.user, shots);
+      shots += 1;
     });
   }
 }
