@@ -36,7 +36,6 @@ li {
   display: flex;
   list-style-type: none;
   white-space: nowrap;
-  display: flex;
   margin: 5px;
 }
 
@@ -55,7 +54,7 @@ li {
 }
 
 #submit {
-  min-height: 0px;
+  min-height: 0;
   width: 90px;
   align-self: end;
   border: none;
@@ -95,7 +94,7 @@ input {
 }
 
 .bronce {
-  background-color:#bd7b17;
+  background-color: #bd7b17;
 }
 
 .scored {

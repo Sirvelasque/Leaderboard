@@ -3,13 +3,13 @@ export default class Ui {
     const container = document.getElementById('app');
     const row = document.createElement('li');
     row.classList.add('item');
-    if(shots === 1){
+    if (shots === 1) {
       row.classList.add('gold');
     }
-    if(shots === 2){
+    if (shots === 2) {
       row.classList.add('silver');
     }
-    if(shots === 3){
+    if (shots === 3) {
       row.classList.add('bronce');
     }
     row.innerHTML = `${name}: <div class='scored'>${score}</div>`;
