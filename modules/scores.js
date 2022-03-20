@@ -1,13 +1,11 @@
 import display from './ui.js';
+
 const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/cheXh8TzhG7oVxtMiAk6/scores/';
 
 export default class App {
   static scores = [];
 
   static high = 0;
-
-  static addScore(score, name) {
-  }
 
   submit = async (user, points) => {
     await fetch(url, {
@@ -24,7 +22,6 @@ export default class App {
 
   async refresh() {
     this.scores = [];
-    console.log("works");
     this.response = await fetch(url).then((response) => response.json());
     this.scores = this.response.result;
     display.remove();
@@ -36,5 +33,4 @@ export default class App {
       display.display(e.score, e.user);
     });
   }
-
 }

@@ -1,5 +1,4 @@
 export default class Ui {
-
   static display(score, name) {
     const container = document.getElementById('app');
     const row = document.createElement('li');
