@@ -1,6 +1,6 @@
 # Leaderboard
 
-> An app to set an scores list with high score order
+> An app to set an scores list and stored into a linked API
 
 
 ## Built With
